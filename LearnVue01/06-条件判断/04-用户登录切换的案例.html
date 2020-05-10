@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <span v-if="isUser">用户账号</span>
+        <span v-else>用户邮箱</span>
+        <!-- 如果我们不希望Vue出现组件复用的情况，可以给对应的(组件)添加key，并且我们需要保证key的值不同，如果key的值相同，则还
+            可以复用
+        -->
+        <button @click="isUser = !isUser">切换类型</button>
+    </div>
+
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                isUser: true
+            }
+        })
+    </script>
+</body>
+</html>

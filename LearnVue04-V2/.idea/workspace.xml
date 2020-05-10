@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3181f8ba-ab4d-4607-8979-5b655cf3d0dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\编程辅助文档\apache-maven-3.6.1-bin\apache-maven-3.6.1\repository" />
+        <option name="mavenHome" value="D:/编程辅助文档/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\编程辅助文档\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bFfrZeus8zO4CJFBZtVUb6EHKK" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-webpack的使用/03-webpack的loader" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LearnVue\LearnVue04-V2\01-webpack的使用\03-webpack的loader\src\js" />
+      <recent name="D:\LearnVue\LearnVue04-V2\01-webpack的使用\01-webpack的起步\src\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LearnVue\LearnVue04-V2\01-webpack的使用\03-webpack的loader" />
+      <recent name="D:\LearnVue\LearnVue04-V2\01-webpack的使用\02-webpack的配置" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3181f8ba-ab4d-4607-8979-5b655cf3d0dd" name="Default Changelist" comment="" />
+      <created>1588232961061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588232961061</updated>
+      <workItem from="1588232962521" duration="8381000" />
+      <workItem from="1588303031750" duration="8278000" />
+      <workItem from="1588483837409" duration="1664000" />
+      <workItem from="1588908130390" duration="6953000" />
+      <workItem from="1588947390949" duration="22000" />
+      <workItem from="1588993551116" duration="1228000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="34" key="SettingsEditor" timestamp="1588308208898">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="281" y="34" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588308208898" />
+    <state x="437" y="0" width="662" height="824" key="find.popup" timestamp="1588234788310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="437" y="0" width="662" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588234788310" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588255585560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588255585560" />
+  </component>
+</project>

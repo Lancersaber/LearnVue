@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    如果直接这样写，aaa.js和bbb.js里定义的变量可能出现命名冲突-->
+<!--为了解决命名冲突的问题，可以加上 type="module" 这意味着每个文件都是单独的一个模块-->
+<!--添加type标签后各个文件之间无法进行访问，要想相互访问，需要import 和 export-->
+    <script src="aaa.js" type="module"></script>
+    <script src="bbb.js" type="module"></script>
+    <script src="mmm.js" type="module"></script>
+</body>
+</html>

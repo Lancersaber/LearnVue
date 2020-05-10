@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .active{
+            color: red;
+        }
+        .line{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2 class="active">{{message}}</h2>
+        <h2 :class="active">{{message}}</h2>
+
+        <!-- <h2 v-bind:class="{class1: true,class2: boolean}"></h2> -->
+        <!--  class后面的boolean值为true时，则该类生效，为false则不生效 -->
+
+        <h2 :class="{active: isActive ,line: isLine}">{{message}}</h2>
+
+        <button @click="changeColor">点我变色</button>
+    </div>
+
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                message: "你好",
+                active: "active",
+                isActive: true,
+                isLine: false,
+                line: "line"
+            },
+            methods: {
+                changeColor(){
+                    this.isActive=!this.isActive;
+                    this.isLine=!this.isLine;
+                }
+            },
+        })
+    </script>
+</body>
+</html>

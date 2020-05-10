@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        
+        <h2>{{message}}</h2>
+        <!-- v-text中的引用的内容会覆盖<h2>标签里的所有内容 -->
+        <h2 v-text="message"></h2>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                message: "hello world"
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{message}}</h2>
+
+        <!-- 在mustache语法中，不仅仅可以直接写变量，也可以写一些简单的表达式 -->
+        <h2>{{ firstName + ' ' + lastName}}</h2>
+        {{1+1}}
+
+        {{counter * 2}}
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: '#app',
+            data:{
+                message: "你好啊",
+                firstName: "hello",
+                lastName: "world",
+                counter: 100
+            }
+        });
+    </script>
+</body>
+</html>

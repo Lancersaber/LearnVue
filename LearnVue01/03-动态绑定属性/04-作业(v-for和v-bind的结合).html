@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 作业需求：点击列表中的哪一项，那么该项的文字变成红色 -->
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in movies" @click="showRed" :class="{red: isActive}">
+                {{index}} {{item}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let vue=new Vue({
+            el: "#app",
+            data:{
+                movies:['哈利波特','海尔兄弟','进击的巨人','火影忍者'],
+                myclass: "red",
+                isActive: false
+            },
+            methods: {
+                showRed(){
+                    this.isActive=!this.isActive;
+                }  
+            },
+        });
+    </script>
+</body>
+</html>

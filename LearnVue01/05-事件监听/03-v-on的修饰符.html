@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 1、.stop修饰符的使用,调用event.stopPropagation() ,禁止事件冒泡-->
+       <div @click="divClick">
+           aaaaaaa
+            <button @click.stop="btnClick">按钮</button>
+       </div>
+
+       <!-- .prevent 调用event.preventDefault(),禁止调用默认事件 -->
+       <form action="baidu">
+           <input type="submit" value="提交" @click.prevent="submitClick">
+       </form>
+
+       <!-- 3.监听某个键盘的健帽 -->
+       <input type="text" @keyup="keyup">
+
+       <!-- 4. .once修饰符的使用 .once 只触发一次回调-->
+       <button @click.once="btn2Click">按钮2</button>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                
+            },
+            methods: {
+                btnClick(){
+                    console.log('btnClick');
+                },
+
+                divClick(){
+                    console.log('divClick');
+                },
+
+                submitClick(){
+                    console.log("hello");
+                },
+                keyup(){
+                    console.log("keyup");
+                },
+                btn2Click(){
+                    console.log(".once");
+                }
+            },
+        });
+
+    </script>
+</body>
+</html>

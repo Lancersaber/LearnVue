@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        总价格: {{totalPrince}}
+    </div>
+
+    <!-- Methods和computed看起来都可以实现我们的功能，那为什么还要多一个计算属性这个东西？ -->
+    <!-- 原因：计算属性会进行缓存，如果多次使用，计算属性只会调用一次 -->
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                books:[{
+                    id: 110,
+                    name: 'Unix编程',
+                    price: 119
+                },{
+                    id: 111,
+                    name: '代码大全',
+                    price: 119
+                },{
+                    id: 112,
+                    name: '数据结构',
+                    price: 119
+                },{
+                    id: 113,
+                    name: '计算机网络',
+                    price: 119
+                },]
+            },
+            computed: {
+                totalPrince(){
+                    let total=0;
+                    for(let i=0;i<this.books.length;i++){
+                        total+=this.books[i].price;
+                    }
+
+                    //另一种遍历方式
+                    // for(let i in books){
+                        
+                    // }
+
+                    return total;
+                }
+            },
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-bind的作用是动态绑定属性 -->
+        <!-- v-bind:src 的简写模式就是 :src -->
+        <img :src="imgUrl">
+    </div>
+
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app=new Vue({
+            el: "#app",
+            data:{
+                imgUrl: "https://pics2.baidu.com/feed/4a36acaf2edda3ccdea994cb33edb207203f9292.jpeg?token=c0a53a4dee2e52ff3923c9c33d0c180c&s=7F2834625B1662454CF5D5CF0100E0B3"
+            }
+        })
+    </script>
+</body>
+</html>

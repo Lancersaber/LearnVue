@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div id="app">
+        {{message}}
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    
+    
+    <script>
+        //Vue实际上是一个类(函数),它的函数参数是一个对象(Object类型)
+        let vue=new Vue({
+            el: '#app',//用于挂载要管理的元素
+            data:{ //定义数据
+               message: "w好",
+            },
+        });
+        
+        //
+    </script>
+</body>
+</html>
